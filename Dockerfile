@@ -8,6 +8,12 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 3000 3001
+const PORT1 = 8080;
+const HOST = 8080;
+EXPOSE 3000 
+
+EXPOSE 3001
 
 CMD ["npm", "start"]
+
+console.log(`Running on http://${HOST}:${PORT}`);
